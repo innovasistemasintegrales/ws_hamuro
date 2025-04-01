@@ -1,11 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="ico/icono.ico" type="image/x-icon" />
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- ICONOS, DATA AOS, ANIMATE CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- slider auto -->
+    <link rel="stylesheet" href="/css/flickity.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <title>GrupoHamuro</title>
 </head>
+
 <body>
-    
+    <div>
+        <!-- HEADER -->
+        <section id="header">
+            <div>
+                <div class="row py-2 mx-3">
+                    <div class="col-lg-3 col-md-3 col-sm-3 d-flex justify-content-between">
+                        <div class="pt-1">
+                            <img src="images/logo.png" alt="" width="50px" class="img-fluid">
+                        </div>
+                        <div id="ico_menu" class="col-sm-9">
+                            <span><i  class="bi bi-list"></i></span>
+                        </div>
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-9">
+                        <nav>
+                            <ul class="d-lg-flex d-md-flex justify-content-end fw-bold">
+                                <li><a id="op_inicio" href="#inicio">INICIO</a></li>
+                                <li><a id="op_nosotros" href="#nosotros">NOSOTROS</a></li>
+                                <li><a id="op_productos" href="#productos">PRODUCTOS</a></li>
+                                <li><a id="op_contactanos" href="#contactanos">CONTÁCTANOS</a></li>
+                                <li><a id="op_tienda" href="https://tiendademo.innova.pe/" class="bi bi-shop-window btn-tienda text-truncate"> TIENDA VIRTUAL</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BODY -->
+        <section id="inicio">
+            <div id="content_relative">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/portada1.png" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        
+                    </div>
+                    <!-- <div id="opacidad">
+                    </div> -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+            </div>
+            <hr>
+            <div id="sliderMarcas"  class="text-center row shadow d-flex align-items-center">
+                <div id="marcas" class="marcas col-auto" >
+                    <img src="/images/proveedor1.png" alt="" class="img-fluid border border-2 rounded-3 ">
+                </div>
+                <div id="marcas" class="marcas col-auto" >
+                    <img src="/images/proveedor2.png" alt="" class="img-fluid border border-2 rounded-3 ">
+                </div>
+                <div id="marcas" class="marcas col-auto" >
+                    <img src="/images/proveedor3.png" alt="" class="img-fluid border border-2 rounded-3 ">
+                </div>
+                <div id="marcas" class="marcas col-auto" >
+                    <img src="/images/proveedor4.png" alt="" class="img-fluid border border-2 rounded-3 ">
+                </div>
+                <div id="marcas" class="marcas col-auto" >
+                    <img src="/images/proveedor5.png" alt="" class="img-fluid border border-2 rounded-3 ">
+                </div>
+                <div id="marcas" class="marcas col-auto" >
+                    <img src="/images/proveedor6.png" alt="" class="img-fluid border border-2 rounded-3 ">
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section id="nosotros" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <!-- Título principal -->
+                        <h2 class="titulo-p text-center fw-bold pb-4 style-titulo" data-aos="fade-down">NOSOTROS</h2>
+        
+                        <!-- Primera fila: Quiénes Somos -->
+                        <div class="row align-items-center g-4 g-lg-5 mb-5">
+                            <!-- Columna de texto -->
+                            <div class="col-lg-6 order-lg-1 order-2" data-aos="flip-left" data-aos-duration="1000">
+                                <div class="pe-lg-4">
+                                    <h3 class="fw-bold text-center mb-4 position-relative style-subtitulo">
+                                        ¿Quiénes somos?
+                                        <span class="position-absolute bottom-0 start-50 translate-middle bg-warning" 
+                                              style="height: 3px; width: 80px;"></span>
+                                    </h3>
+        
+                                    <div class="p-3 p-md-4 bg-light rounded-3 estilosTexto" style="border-left: 4px solid #0052A5;">
+                                        <p class="mb-3 mb-md-4">
+                                            <span class="d-block fw-bold fs-5 text-dark mb-2">
+                                                <i class="bi bi-building me-2" style="color: #0052A5;"></i>
+                                                GRUPO HAMURO S.A.C.
+                                            </span>
+                                            Es una empresa comprometida con la <strong class="fw-semibold" style="color: #0052A5;">excelencia</strong> en la venta de materiales de construcción, especializándonos en:
+                                        </p>
+        
+                                        <ul class="row row-cols-1 row-cols-sm-2 g-3 g-md-4 list-unstyled mb-3 mb-md-4">
+                                            <li class="col d-flex align-items-start">
+                                                <i class="bi bi-pipe mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Tubos de plástico</span>
+                                            </li>
+                                            <li class="col d-flex align-items-start">
+                                                <i class="bi bi-tools mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Artículos de ferretería</span>
+                                            </li>
+                                            <li class="col d-flex align-items-start">
+                                                <i class="bi bi-gear-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Equipos</span>
+                                            </li>
+                                            <li class="col d-flex align-items-start">
+                                                <i class="bi bi-droplet-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Materiales de fontanería y calefacción</span>
+                                            </li>
+                                        </ul>
+        
+                                        <p class="mb-0">
+                                            Nos enorgullece ofrecer <strong style="color: #0052A5;">soluciones integrales</strong> para satisfacer las necesidades de construcción y mejoramiento del hogar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Columna de imagen -->
+                            <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left">
+                                <div class="ratio ratio-16x9">
+                                    <img src="images/nosotros.gif" 
+                                         alt="Nosotros - GRUPO HAMURO S.A.C." 
+                                         class="img-fluid rounded-3 object-fit-cover" 
+                                         style="border: 2px solid #0052A5;">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Segunda fila: Misión y Visión -->
+                        <div class="row align-items-center g-4 g-lg-5">
+                            <!-- Columna de imagen -->
+                            <div class="col-lg-6" data-aos="zoom-in">
+                                <div class="ratio ratio-16x9">
+                                    <img src="images/mision.gif" 
+                                         alt="Misión y Visión - GRUPO HAMURO S.A.C." 
+                                         class="img-fluid rounded-3 object-fit-cover" 
+                                         style="border: 2px solid #0052A5;">
+                                </div>
+                            </div>
+        
+                            <!-- Columna de texto -->
+                            <div class="col-lg-6 pt-lg-5" data-aos="flip-left" data-aos-duration="1000">
+                                <div class="ps-lg-4 justify-content-center">
+                                    <h3 class="fw-bold text-center mb-4 position-relative style-subtitulo">
+                                        Misión
+                                        <span class="position-absolute bottom-0 start-50 translate-middle bg-warning" 
+                                              style="height: 3px; width: 80px;"></span>
+                                    </h3>
+        
+                                    <div class="p-3 p-md-4 bg-light rounded-3 estilosTexto" style="border-left: 4px solid #0052A5;">
+                                        <p class="mb-4">
+                                            Nuestra misión en GRUPO HAMURO S.A.C. es proporcionar a 
+                                            nuestros clientes productos de alta calidad y servicios 
+                                            excepcionales en el área de materiales de construcción. 
+                                            Nos esforzamos por ser líderes en la industria, 
+                                            brindando soluciones innovadoras y sostenibles 
+                                            para contribuir al desarrollo de comunidades resistentes y sostenibles.
+                                        </p>
+        
+                                        <h3 class="fw-bold text-center mb-4 position-relative style-subtitulo">
+                                            Visión
+                                            <span class="position-absolute bottom-0 start-50 translate-middle bg-warning" 
+                                                  style="height: 3px; width: 80px;"></span>
+                                        </h3>
+        
+                                        <p class="mb-0">
+                                            Como líderes del mercado en la venta de tubos de plástico, materiales de construcción, artículos de ferretería, aspiramos a ser reconocidos por nuestra excelencia, integridad y compromiso con la sostenibilidad. Buscamos expandir nuestra presencia a nivel nacional e internacional, manteniendo siempre un enfoque en la innovación y la responsabilidad ambiental.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div> <!-- Cierra container -->
+                </div> <!-- Cierra row justify-content-center -->
+            </div>
+        </section>
+        
+                            
+        <!-- <section id="subPortada">
+            <div id="subRelative">
+                <img src="images/subPortada.jpg" alt="" class="img-fluid">
+                <div id="subAbsolute">
+                </div>
+            </div>
+        </section> -->
+        <section id="productos">
+            <div class="container">
+                <h3 id="t_contactanos" class="titulo-p text-center pb-3 fw-bold style-titulo pt-5" data-aos="fade-down">PRODUCTOS</h3>
+                <div class="row">
+                    <div class="col pb-5"> 
+                        <div id="contenedorProductos">
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/producto1.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/producto2.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/producto3.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/producto4.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/producto5.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/producto6.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="servicios" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <!-- Título principal -->
+                        <h2 class="titulo-p text-center fw-bold pb-4 style-titulo" data-aos="fade-down">SERVICIOS</h2>
+                        
+                        <!-- Primer servicio: Transporte de carga -->
+                        <div class="row align-items-center g-4 g-lg-5 mb-5">
+                            <!-- Columna de texto -->
+                            <div class="col-lg-6 order-lg-1 order-2" data-aos="flip-left" data-aos-duration="1000">
+                                <div class="pe-lg-4">
+                                    <h3 class="fw-bold text-center mb-4 position-relative style-subtitulo">
+                                        Transporte de carga
+                                        <span class="position-absolute bottom-0 start-50 translate-middle-x bg-warning" 
+                                              style="height: 3px; width: 80px;"></span>
+                                    </h3>
+                                    
+                                    <div class="p-3 p-md-4 bg-light rounded-3 estilosTexto" 
+                                         style="border-left: 4px solid #0052A5;">
+                                        <p class="mb-0">
+                                            <i class="bi bi-truck me-1" style="color: #0052A5;"></i>
+                                            GRUPO HAMURO S.A.C. ofrece un servicio integral de transporte de carga para garantizar entregas seguras y oportunas. Contamos con:
+                                        </p>
+                                        
+                                        <ul class="mt-3 list-unstyled">
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Flota de vehículos especializados</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Conductores capacitados y certificados</span>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Gestión logística desde almacén hasta destino final</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Columna de imagen -->
+                            <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left">
+                                <div class="ratio ratio-16x9">
+                                    <img src="images/servicio1.png" 
+                                         alt="Servicio de transporte de carga - GRUPO HAMURO S.A.C." 
+                                         class="img-fluid rounded-3 object-fit-cover shadow" 
+                                         style="border: 2px solid #0052A5;">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Segundo servicio: Puesta de materiales -->
+                        <div class="row align-items-center g-4 g-lg-5">
+                            <!-- Columna de imagen -->
+                            <div class="col-lg-6" data-aos="zoom-in">
+                                <div class="ratio ratio-16x9">
+                                    <img src="images/servicio2.png" 
+                                         alt="Servicio de puesta de materiales en obra - GRUPO HAMURO S.A.C." 
+                                         class="img-fluid rounded-3 object-fit-cover shadow" 
+                                         style="border: 2px solid #0052A5;">
+                                </div>
+                            </div>
+                            
+                            <!-- Columna de texto -->
+                            <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
+                                <div class="ps-lg-4">
+                                    <h3 class="fw-bold text-center mb-4 position-relative style-subtitulo">
+                                        Puesta de Materiales en Obra
+                                        <span class="position-absolute bottom-0 start-50 translate-middle-x bg-warning" 
+                                              style="height: 3px; width: 80px;"></span>
+                                    </h3>
+                                    
+                                    <div class="p-3 p-md-4 bg-light rounded-3 estilosTexto" 
+                                         style="border-left: 4px solid #0052A5;">
+                                        <p class="mb-3">
+                                            <i class="bi bi-building-gear me-1" style="color: #0052A5;"></i>
+                                            Entendemos la importancia de la eficiencia en proyectos de construcción. Nuestro servicio incluye:
+                                        </p>
+                                        
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Coordinación logística especializada</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Entrega justo a tiempo en obra</span>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill mt-1 me-2" style="color: #0052A5; font-size: 1.1rem;"></i>
+                                                <span>Soporte durante todo el proceso constructivo</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <p class="mb-0 mt-2">
+                                            Facilitamos el proceso de construcción para que nuestros clientes se enfoquen en lo importante.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="atencion_cliente">
+            <div class="container  pb-4">
+                <div class="espacio_borde">
+                    <div class="row">
+                        <h3 class="text-center fw-bold mt-4 " data-aos="fade-down">ATENCIÓN AL CLIENTE</h3>
+                        
+                        <!-- Primera columna (Teléfono) -->
+                        <div class="col-lg-6 col-md-6 ">
+                            <div class="d-flex align-items-center">
+                                <!-- Imagen a la izquierda -->
+                                <img src="images/ico-llamadas.png" alt="" width="25%">
+                                
+                                <!-- Textos a la derecha (usando ms-3 para margen izquierdo) -->
+                                <div class="ms-3">
+                                    <span class="fs-3">Comunícate al</span>
+                                    <span id="numero" class="btn rounded-pill">
+                                        <a href="https://api.whatsapp.com/send/?phone=942100331&text&type=phone_number&app_absent=0" target="_blank" class="d-none d-lg-block d-md-block d-sm-none fw-bold">942100331</a>
+                                        <a href="tel:942100331" class="d-lg-none d-md-none d-sm-block">942100331</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Segunda columna (Horario) -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="d-flex align-items-center">
+                                <!-- Imagen a la izquierda -->
+                                <img src="images/icono-horario1.png" alt="" width="15%">
+                                
+                                <!-- Textos a la derecha (usando ms-3 para margen izquierdo) -->
+                                <div class="ms-3">
+                                    <h4 class="mb-1">Lunes a Viernes: 8:00 a.m. - 6:00 p.m.</h4>
+                                    <h4 class="mb-0">Sábados: 8:00 a.m. - 1:00 p.m.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clientes">
+            <div class="container">
+                <h3 id="t_contactanos" class="titulo-p titulo-p text-center pb-3 fw-bold style-titulo pt-5" data-aos="fade-down">CLIENTES</h3>
+                <div class="row">
+                    <div class="col pb-5"> 
+                        <div id="contenedorClientes">
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/cliente1.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/cliente2.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/cliente3.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/cliente4.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/cliente5.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                            <div class="articulo shadow text-center d-flex align-items-center">
+                                <div class="text-center">
+                                    <img src="/images/cliente6.png" alt="" class="img-fluid img-producto" width="300px" />
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactanos">
+            <div class="container">
+                <div class="pt-5">
+                    <div class="row align-items-center">
+                        <h3 id="t_contactanos" class="titulo-p text-center pb-3 fw-bold style-titulo" data-aos="fade-down">CONTÁCTANOS</h3>
+                        <div class="col-lg-6 pt-2 fs-5 ">
+                            <div class="row  justify-content-evenly">
+                                <div class="marcas col-auto">
+                                    <img src="/images/logo.png" alt="" width="120px" class="img-fluid">
+                                </div>
+                                <div class="marcas col-auto" text-center >
+                                    <div class=" fw-bold fs-5 ">
+                                        <span>Nuestras redes sociales</span>
+                                    </div>
+        
+                                    <div class="py-1 pb-2 text-center">
+                                        <span class="fs-ico m-2"><a href="#" target="_blank"><i class="bi bi-tiktok"></i></a></span>
+                                        <span class="fs-ico m-2"><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></span>
+                                        <span class="fs-ico m-2"><a href="https://api.whatsapp.com/send/?phone=942100331&text&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
+                                        <span class="fs-ico m-2"><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></span>
+                                        <!-- <span class="fs-ico m-2"><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></span> -->
+                                    </div>
+                                    <span class="subtitulo fw-bold style-subtitulo">"GRUPO HAMURO S.A.C"</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex">
+                                <span><i class="bi bi-telephone-fill"></i></span>
+                                <p class="ms-3 fw-bold ">(+51) 992197620</p>
+                            </div>
+                            <div class="d-flex fw-bold">
+                                <span><i class="bi bi-telephone-fill"></i></span>
+                                <p class="ms-3 fw-bold">(+51) 992197620</p>
+                            </div>
+                            <div class="d-flex">
+                                <span><i class="bi bi-geo-alt-fill"></i></span>
+                                <p class="ms-3 fw-bold">Av. Brasil Nro. 315 Urb. 15 de enero Arequipa - Arequipa - Paucarpata</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.184682684856!2d-71.51108652379654!3d-16.415444238556283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b1198bcdad1%3A0xedd64a4dcd8bb6a4!2sBrasil%20315%2C%20Arequipa%2004007!5e0!3m2!1ses-419!2spe!4v1705953537165!5m2!1ses-419!2spe" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3  border border-2 border-secondary"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <section id="footer">
+            <div class="container">
+                <div class="py-3">
+                    <div class="row text-center">
+                        <div class="col">
+                            <hr>
+                            <span><a id="copyright" class="fw-bold" href="">© 2025 - Desarollado por Innova Sistemas Integrales S.A.C.</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Whatwapp flotante -->
+    <a href="https://api.whatsapp.com/send?phone=+51992197620&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n:" class="float" target="_blank">
+        <i class="bi bi-whatsapp my-float"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/flickity.pkgd.min.js"></script>
+    <script>
+        AOS.init();
+        slider1();
+        slider2();
+        slider3();
+
+    </script>
+
 </body>
+
 </html>
